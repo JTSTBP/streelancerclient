@@ -1,0 +1,254 @@
+
+.validation-error {
+  color: red;
+  background-color: #ffecec;
+
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.register-bg-container{ /* fallback or overlay color */
+  background-image: url('../../images/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay; /* or multiply, screen, darken, lighten etc. */
+ }
+.register-container {
+   width: clamp(320px, 80%, 900px);
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  
+}
+.close-registration-btn {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  z-index: 1000;
+  transition: color 0.3s ease;
+}
+
+.close-registration-btn:hover {
+  color: #ff4d4d;
+}
+
+
+.register-title {
+  font-size: var(--mainheadfont);
+  color: var(--primarycolor);
+  margin-bottom: 5px;
+}
+
+.register-subtitle {
+  color: var(--parafont);
+  margin-bottom: 30px;
+}
+/* Step Container with Line */
+.register-steps-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.register-step-line-full {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-color: #D5C5DE;
+  z-index: 0;
+  border-radius: 14px;
+}
+
+.register-step-line-progress {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  height: 8px;
+  background-color: var(--lightpurcolor);
+  z-index: 1;
+  border-radius: 14px;
+  transition: width 0.3s ease;
+}
+
+.register-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px; /* Space between line and steps */
+  position: relative;
+  z-index: 2;
+   text-align: center;
+   flex:1;
+}
+
+.register-step-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #D5C5DE;
+  color: var(--primarycolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+
+.register-step-circle.active ,.register-step-circle.completed  {
+  background-color: var(--lightpurcolor);
+  color: #FFF4F4;
+}
+
+.register-step-label {
+  margin-top: 5px;
+  font-size: var(--smallparafont);
+}
+
+
+
+/* registration form content */
+.register-form-content {
+
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  min-height: 150px;
+}
+
+.register-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.register-form-grid input,
+.register-form-grid select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.register-form-grid input:focus,
+.register-form-grid select:focus {
+  border-color: #5e239d;
+  outline: none;
+}
+
+.register-checkbox-group {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.register-button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.register-continue-btn,
+.register-back-btn,
+.register-submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+.register-continue-btn,
+
+.register-submit-btn {  margin-left: auto;
+}
+
+.register-continue-btn {
+  background-color: var(--primarycolor);
+  color: #fff;
+}
+
+.register-continue-btn:hover {
+  background-color: #48167f;
+}
+
+.register-back-btn {
+  background-color: transparent;
+  border: solid 2px var(--primarycolor);
+
+  color: var(--primarycolor);
+}
+.register-submit-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.register-submit-btn:hover {
+  background-color: #218838;
+}
+
+
+/* popup */
+
+/* Overlay background for popup */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Popup box style */
+.popup-box {
+background-color: #FFF0E8;
+    color: var(--primarycolor);
+    /* padding: 20px 30px; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(177, 177, 177, 79%);
+    max-width: 497px;
+    width: 82%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.popup-box p{
+  border-bottom: 2px solid grey;
+  padding: 20px;
+}
+
+/* Close button */
+.close-btn {
+  margin: 15px;
+  padding: 8px 16px;
+  background-color: #ec4899;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+      align-self: flex-end;
+}
+
+.close-btn:hover {
+  background-color: #db2777;
+}
+
+.backend-error-message{
+  color: red;
+}

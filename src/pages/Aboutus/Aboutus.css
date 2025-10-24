@@ -1,0 +1,335 @@
+:root{
+    --aboutheading:clamp(1.4rem, 4.5vw, 2rem); 
+    --headingsub:clamp(2rem, 3vw, 5rem);
+   
+}
+
+.about-section {
+ 
+
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+    /* light pink background */
+  padding: 60px 20px;
+  position: relative;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+    color: var(--primarycolor);
+}
+
+.about-title {
+  font-size: var(--aboutheading);
+  font-weight: bold;
+
+  margin-bottom: 8px;
+}
+
+.about-subtitle {
+  font-size: var(--parafont);
+
+}
+
+.about-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1 1 55%;
+  padding-right: 20px;
+}
+
+.about-heading {
+  font-size: var(--aboutheading);
+  font-weight: bold;
+  color: var(--primarycolor);
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color:#871ECE ;
+}
+
+.about-line {
+ img{
+    width: 93%;
+ }
+  margin-bottom: 20px;
+}
+
+
+
+.arrow {
+
+  margin-left: 10px;
+}
+
+.about-subheading {
+  font-size: var(--headingsub);
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: var(--lightpurcolor);
+}
+
+.about-description {
+  font-size: var(--parafont);
+ color: var(--lightpurcolor);
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+
+/* StatsSection */
+
+.stats-section {
+
+  padding: 50px 20px;
+ 
+}
+
+.stats-heading {
+  font-size: var(--aboutheading);
+  color: var(--primarycolor);
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #871ECE; /* purple highlight */
+  font-weight: bold;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+      height: 43vh;
+}
+
+.stat-box {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.dark-bg {
+  background: var(--primarycolor);
+  color: #fff;
+}
+
+.light-bg {
+  background: #E4D9F5;
+  color: var(--lightpurcolor);
+  align-self: flex-end;
+}
+
+.stat-number {
+  font-size: var(--mainheadfont);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stat-text {
+  font-size: var(--btnfont);
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+
+/* ourvision */
+
+.image-overlay-container {
+  position: relative;
+  width: fit-content;
+
+}
+
+.purple-bg {
+  position: absolute;
+  bottom: 15px;
+  left: -35px;
+ width: 100%;
+    height: 81%;
+  background: var(--lightpurcolor); /* purple background */
+  z-index: 0;
+}
+.pri-bg{
+ position: absolute;
+    bottom: -2px;
+    left: -35px;
+    width: 100%;
+    height: 87%;
+    background: var(--primarycolor);
+    z-index: 0;
+}
+
+.main-image {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 500px; /* adjust based on design */
+  border-radius: 4px;
+  
+}
+
+.ourvision-mission{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 115px auto;
+}
+
+.vision-text {
+
+  color: var(--lightpurcolor);
+  width: clamp(250px, 80%, 537px);
+  h2{
+    font-size: var(--headingsub);
+    font-weight: 500;
+  }
+  p{
+    font-size: var(--parafont);
+  }
+}
+.vision-text img{
+  width: 93%;
+}
+
+@media (max-width: 1120px) {
+  .stats-grid {height: auto;}
+  .pri-bg{    bottom: -47px;
+    left: -35px;
+
+    height: 100%;}
+}
+@media (max-width: 768px) {
+  .purple-bg, .pri-bg {
+    bottom: -15px; /* reduce offset */
+    left: -15px;   /* reduce offset */
+  }
+  .ourvision-mission{
+    margin: 50px auto;
+  }
+  .mission{
+  flex-direction: column-reverse;
+          align-items: center;
+}
+
+  .main-image {
+    width: 350px;
+  }
+
+  
+.about-main{
+  flex-direction: column;
+}
+}
+
+
+/* ourvalue */
+
+.about-logo {
+  position: absolute;
+  top: 20px;  /* adjust as needed */
+  left: 20px; /* adjust as needed */
+  z-index: 10; /* ensure it stays above other elements */
+}
+
+.about-logo img {
+  width: 120px;  /* adjust logo size */
+  height: auto;
+}
+
+.ourvalue-section {
+  
+    margin: 20px auto;
+  .arrow{
+  width:50%;
+
+  text-align: center;
+}}
+.ourvalue-heading{
+  font-size:var(--headingsub);
+  color: var(--lightpurcolor);
+}
+.ourvalue-text{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+
+}
+.ourvalue-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+}
+.ourvalue-item{
+  flex: 1 1 254px;
+  justify-items: center;
+}
+.valimg-container {
+  position: relative;
+  width: 300px;   /* adjust as needed */
+  height: 300px;  /* adjust as needed */
+}
+.ourvalue-number{
+  color: var(--lightpurcolor);
+}
+.ourvalue-para{
+  max-width: 82%;
+  color: var(--primarycolor);
+}
+
+.big-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* optional */
+}
+
+.small-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;    /* size of small image */
+  height: 80px;   /* size of small image */
+  transform: translate(-50%, -50%);
+ 
+}
+
+@media screen and (max-width:700px) {
+  .about-text {
+    padding: 0;
+  }
+  .about-logo img {
+  width: 65px; }
+}

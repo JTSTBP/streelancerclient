@@ -1,0 +1,99 @@
+.founder-container {
+  display: flex;
+  flex-direction: row;
+
+  padding: 40px;
+ justify-content: center;
+ gap: 10%;
+  background: var(--bgcolor);
+  color: #333;
+  flex-wrap: wrap;
+}
+.mobile-scaling-container {
+
+  padding: 20px;
+
+  max-width: 400px;
+ 
+}
+
+.mobile-title {
+  font-size: var(--mainheadfont);
+  font-weight: bold;
+  color: #3d3a66;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.mobile-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.mobile-caption {
+  color: #4b3f50;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  color: #4b3f50;
+  font-weight: bold;
+}
+
+.mobile-description-box {
+  background-color: #4b3f87;
+  padding: 20px;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.mobile-description {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+.hiring-container {
+
+ 
+  color: #3d3a66;
+  max-width: 450px;
+ 
+}
+
+.hiring-intro {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.hiring-image {
+  width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.hiring-list {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.hiring-item {
+  margin-bottom: 20px;
+}
+
+.hiring-item strong {
+  color: #000;
+}
+
+
+@media screen and (max-width:600px) {
+  .founder-container {padding: 0px;}
+  .hiring-container {padding: 20px;}
+
+}
