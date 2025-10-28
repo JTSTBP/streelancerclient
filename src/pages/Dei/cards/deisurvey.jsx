@@ -20,7 +20,7 @@ const solutions = [
     title: "Instant Scoring",
     image: sales,
     color: "ind3",
-    list: "Get real-time results based on your DEI maturity level: AWARE. ACTIVE. IMPACT.",
+    list: "Get real-time results based on your DEI maturity level: AWARE. ACTIVE. IMPACT. plus, receive actionable next steps to move forward.",
   },
 ];
 
