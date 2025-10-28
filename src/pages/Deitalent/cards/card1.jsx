@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 // import topWave from '../../../images/dei.png';
 import topWave from "../../../images/deitalenthero2.png";
+
 import { ArrowLeft } from 'lucide-react';
 
 import { useLocation, useNavigate } from "react-router-dom";
@@ -23,11 +24,13 @@ const Deitalentbanner = () => {
           </p>
         </div> */}
 
-        <div className="daitalenthire-hero">
-          <h1>Streelancer for Indian Enterprises</h1>
-          <p>Flexible • Purpose-Driven • DEI Compliant</p>
+        <div className="daitalenthire-hero tempo-bg1">
+          <div>
+            <h1>Streelancer for Indian Enterprises</h1>
+            <p>Flexible • Purpose-Driven • DEI Compliant</p>
+          </div>
         </div>
-        <img src={topWave} alt="Top Wave" className="top-wave" />
+        {/* <img src={topWave} alt="Top Wave" className="top-wave" /> */}
       </div>
     </div>
   );

@@ -72,7 +72,7 @@ display: flex
 }
 
 .left-section h2 {
-  font-size: var(--heading);
+  font-size: var(--mainheadfont);
   
   margin-bottom: 1rem;
 }
@@ -293,6 +293,7 @@ display: flex;
 .subtitle {
 font-size: var(--parafont);
   margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .steps {

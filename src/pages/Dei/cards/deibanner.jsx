@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 // import topWave from '../../../images/sambg2.png';
-import topWave from "../../../images/hero4.png";
+import topWave from "../../../images/deitalentbg.png";
 import { ArrowLeft } from 'lucide-react';
 
 
@@ -14,8 +14,7 @@ const Deibanner = () => {
  
   return (
     <div>
- <div className="wave-section">
-          
+      <div className="wave-section">
         {/* <img src={topWave} alt="Top Wave" className="top-wave" />
         
         <div className="text-overlay">
@@ -25,13 +24,14 @@ const Deibanner = () => {
         </div> */}
 
         <div className="daitalenthire-hero">
-                    <h1>Is Your Workplace Truly Inclusive?</h1>
-          <p>5-Minute DEI Scorecard • Benchmark. Improve. Get Badged.</p>
-                </div>
-                <img src={topWave} alt="Top Wave" className="top-wave" />
-              
+          <div>
+            <h1>Is Your Workplace Truly Inclusive?</h1>
+            <p>5-Minute DEI Scorecard • Benchmark. Improve. Get Badged.</p>
+          </div>
+        </div>
+        {/* <img src={topWave} alt="Top Wave" className="top-wave" /> */}
       </div>
-   </div>
+    </div>
   );
 };
 

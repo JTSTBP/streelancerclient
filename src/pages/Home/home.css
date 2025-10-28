@@ -13,7 +13,7 @@
   --mainparafont:clamp(3px, 1.8vw, 1.4rem);
   --mainheadfont: clamp(1.2rem, 2.5vw, 2.5rem);
   --subheadfont: clamp(0.9rem, 2vw, 1.3rem);
-  --parafont: clamp(0.85rem, 1.8vw, 1.1rem);
+  --parafont: clamp(0.85rem, 1.8vw, 1.3rem);
   --smallparafont: clamp(0.65rem, 1vw, 1rem);
   --btnfont: clamp(0.9rem, 2vw, 1.1rem);
 

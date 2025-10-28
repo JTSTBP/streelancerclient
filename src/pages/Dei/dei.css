@@ -1,7 +1,6 @@
 .dei-container {
   text-align: center;
   padding: 40px 20px;
-
 }
 
 .dei-buttons {
@@ -20,8 +19,8 @@
   border-radius: 6px;
   font-size: var(--btnfont);
   cursor: pointer;
-    
-    white-space: nowrap;
+
+  white-space: nowrap;
 }
 
 .book-session-btn {
@@ -33,7 +32,7 @@
   font-size: var(--btnfont);
   cursor: pointer;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .dei-heading {
@@ -44,7 +43,7 @@
 
 .dei-description {
   color: var(--lightpurcolor);
-  font-size:var(--parafont);
+  font-size: var(--parafont);
   margin-bottom: 40px;
   line-height: 1.6;
 }
@@ -59,7 +58,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:var(--primarycolor);
+  color: var(--primarycolor);
 }
 
 .circle {
@@ -74,31 +73,27 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
-.circle div{
-        width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--lightpurcolor);
-    color: #ffffff;
-}
+.circle div {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightpurcolor);
+  color: #ffffff;
+}
 
 /* survey */
 
-.solution-card ul p{
-    font-size: var(--parafont);
+.solution-card ul p {
+  font-size: var(--parafont);
 }
-
 
 /* benefits */
 
 .benefits-container {
- 
   padding: 40px 20px;
   text-align: center;
 }
@@ -116,32 +111,28 @@
 }
 
 .benefits-content {
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
 
-
-    justify-content: center;
-    gap: 40px;
-    align-items: flex-start;
-
-    display: grid;
-    grid-template-columns: 30% 50%;
+  display: grid;
+  grid-template-columns: 30% 50%;
 }
 
 .benefits-image img {
   max-width: 88%;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .benefits-cards {
   display: flex;
 
   gap: 30px;
-    flex-wrap: wrap;
-  
-    justify-content: center;
+  flex-wrap: wrap;
+
+  justify-content: center;
 }
-
-
 
 /* Benifits card1 */
 
@@ -156,7 +147,7 @@
 
   background-image: url("../../images/deibg.png");
   background-repeat: no-repeat;
-    background-position: right;
+  background-position: right;
 }
 
 .dei-badge-title {
@@ -164,19 +155,19 @@
   font-size: 20px;
   padding-bottom: 6px;
   margin-bottom: 12px;
-  color: #D3B5FF;
+  color: #d3b5ff;
 }
 
 .dei-badge-description {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #D3B5FF;
+  color: #d3b5ff;
 }
 
 .badge-images {
   display: flex;
- 
+
   gap: 10px;
 }
 
@@ -186,22 +177,19 @@
 }
 
 .ribbon-icon {
-    width: 50px;
-    position: absolute;
-    bottom: -40px;
-    right: -18px;
-    border-radius: 50%;
-    border: 10px solid var(--bgcolor);
-    transform: translateY(-50%);
- 
+  width: 50px;
+  position: absolute;
+  bottom: -40px;
+  right: -18px;
+  border-radius: 50%;
+  border: 10px solid var(--bgcolor);
+  transform: translateY(-50%);
 }
-
 
 /* card2 */
 
-
 .hiring-card h3 {
-  color:#D3B5FF ;
+  color: #d3b5ff;
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
@@ -210,7 +198,7 @@
   font-size: 0.9rem;
   margin-bottom: 20px;
   line-height: 1.4;
-  color:#D3B5FF;
+  color: #d3b5ff;
 }
 
 .application-stats {
@@ -228,7 +216,7 @@
 }
 
 .stat-percent {
-  color: #FF7B23;
+  color: #ff7b23;
   font-weight: bold;
 }
 
@@ -251,12 +239,10 @@
   color: white;
 }
 
-
 /* card3 */
 
-
 .public-card h3 {
-  color: #D3B5FF;
+  color: #d3b5ff;
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
@@ -265,7 +251,7 @@
   font-size: 0.9rem;
   margin-bottom: 20px;
   line-height: 1.4;
-  color: #D3B5FF;
+  color: #d3b5ff;
 }
 
 .icon-grid {
@@ -305,62 +291,57 @@
   color: white;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .benefits-content {
-     grid-template-columns: 88%; 
+    grid-template-columns: 88%;
   }
 }
 
 /* trust */
 
-.dei-trust{
-    background-color: var(--bgcolor);
+.dei-trust {
+  background-color: var(--bgcolor);
 }
-.dei-trust h1{
-    font-size: var(--mainheadfont);
+.dei-trust h1 {
+  font-size: var(--mainheadfont);
 }
-.dei-trust p{
+.dei-trust p {
+  font-size: var(--parafont);
+}
+.dei-trust .howitworks-text {
+  text-align: left;
+  .step-box {
+    border: 1px solid #948e8e;
+  }
+  .steps h1 {
     font-size: var(--parafont);
-}
-.dei-trust .howitworks-text{
-    text-align: left;
-    .step-box{
-        border: 1px solid #948E8E;
-    }
-    .steps h1{
-        font-size: var(--parafont);
-    }
-      .steps p{
-        font-size: var(--smallparafont);
-      }
+  }
+  .steps p {
+    font-size: var(--smallparafont);
+  }
 }
 
-
-@media screen and (max-width:667px) {
-.dei-trust .howitworks-text .why{
-   
-        text-align: center;
-    
-}}
+@media screen and (max-width: 667px) {
+  .dei-trust .howitworks-text .why {
+    text-align: center;
+  }
+}
 /* certification */
 
 .dei-cert-container {
-display: flex
-;
-    justify-content: center;
-    gap: 10%;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #f5dde9;
-    border-radius: 21px;
-    padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f5dde9;
+  border-radius: 21px;
+  padding: 30px;
 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 67px auto;
-    width: 71%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 67px auto;
+  width: 71%;
 }
-
-
 
 .dei-left h3 {
   color: #4b0082;
@@ -389,14 +370,11 @@ display: flex
   flex-shrink: 0;
 }
 
-
-
 .dei-right img {
   width: 260px;
   height: auto;
   border-radius: 8px;
 }
-
 
 /* badges */
 
@@ -404,7 +382,6 @@ display: flex
   background-color: #ffeee7;
   text-align: center;
   padding: 40px 20px;
-
 }
 
 .dei-badges-container h2 {
@@ -426,25 +403,22 @@ display: flex
   flex-wrap: wrap;
 }
 
-
-
 .description-box {
-      /* background: #f5f5f5; */
-    margin: 40px auto 0;
-    padding: 20px;
-    max-width: 605px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    /* color: #4b0082; */
-    font-size: var(--parafont);
-    border: 1px solid #948E8E;
+  /* background: #f5f5f5; */
+  margin: 40px auto 0;
+  padding: 20px;
+  max-width: 605px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* color: #4b0082; */
+  font-size: var(--parafont);
+  border: 1px solid #948e8e;
 }
-
 
 /* end */
 
 .start-dei-container {
-  background-color: #F28779;
+  background-color: #f28779;
   text-align: center;
   padding: 60px 20px;
 
@@ -458,9 +432,9 @@ display: flex
 }
 
 .subtext {
-  font-size:var(--parafont);
+  font-size: var(--parafont);
   margin-bottom: 30px;
-color: var(--lightpurcolor);
+  color: var(--lightpurcolor);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -478,24 +452,22 @@ color: var(--lightpurcolor);
   transition: background-color 0.3s ease;
 }
 
-
 .footer-text {
   font-size: var(--smallparafont);
   color: var(--lightpurcolor);
 }
 .dei-input {
   padding: 10px;
-background-color: transparent;
+  background-color: transparent;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.response-message{
-   margin-top: 10px;
+.response-message {
+  margin-top: 10px;
   font-size: 14px;
   color: #333;
 }
-
 
 /* congratulationspopup */
 
@@ -534,14 +506,12 @@ background-color: transparent;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 12px;
-
 }
 
 .congratulationspopup-message {
   color: #6a4cd6;
   font-size: 14px;
   margin-bottom: 24px;
-
 }
 
 .congratulationspopup-button {
@@ -552,9 +522,7 @@ background-color: transparent;
   padding: 10px 20px;
   font-size: 13px;
   cursor: pointer;
-
 }
-
 
 /* popupcard1 */
 
@@ -570,7 +538,7 @@ background-color: transparent;
   margin-bottom: 5px;
   font-weight: 500;
   font-size: var(--parafont);
-  color: #62208F;
+  color: #62208f;
 }
 
 .info-form-container input,
@@ -581,18 +549,15 @@ select {
   border: 1.5px solid var(--lightpurcolor);
   border-radius: 6px;
   outline: none;
- color: var(--lightpurcolor) !important;
+  color: var(--lightpurcolor) !important;
   background-color: transparent;
   transition: border 0.3s;
 }
 
 .info-form-container input::placeholder,
 select:invalid {
-  color: #B994F1;
+  color: #b994f1;
 }
-
-
-
 
 /* Full screen PopUp */
 .dei-overlay {
@@ -610,7 +575,6 @@ select:invalid {
   box-sizing: border-box;
 }
 
-
 .dei-popup {
   background: white;
   width: 70%;
@@ -618,11 +582,10 @@ select:invalid {
   overflow-y: auto;
   padding: 30px 40px;
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 
   position: relative;
 }
-
 
 .dei-popup::-webkit-scrollbar {
   width: 6px;
@@ -631,7 +594,6 @@ select:invalid {
   background-color: #b26de0;
   border-radius: 10px;
 }
-
 
 .dei-close-button {
   position: absolute;
@@ -644,22 +606,20 @@ select:invalid {
   border-radius: 50%;
   color: var(--lightpurcolor);
   transition: color 0.2s;
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
 }
 
 .dei-close-button:hover {
-background: #ecd7fb;
+  background: #ecd7fb;
 }
-
 
 .dei-popup h2 {
   color: var(--lightpurcolor);
   margin-bottom: 20px;
 }
-
 
 .dei-progress-bar {
   display: flex;
@@ -696,8 +656,6 @@ background: #ecd7fb;
   background: var(--lightpurcolor);
 }
 
-
-
 .deipop-buttons {
   margin-top: 30px;
   display: flex;
@@ -718,24 +676,11 @@ button:disabled {
   cursor: not-allowed;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* infocard2 */
 
 .dei-workforce-container {
- 
   margin-top: 10px;
 }
-
 
 .dei-section-label {
   margin-bottom: 10px;
@@ -751,7 +696,6 @@ button:disabled {
   font-size: var(--parafont);
 }
 
-
 .dei-input-row {
   display: flex;
   gap: 10px;
@@ -765,20 +709,18 @@ button:disabled {
   border-radius: 6px;
   font-size: var(--smallparafont);
   width: 100%;
-  color: #B994F1;
+  color: #b994f1;
 }
 
 .dei-input-row input::placeholder {
-  color: #B994F1;
+  color: #b994f1;
 }
-
 
 .dei-checkbox-grid {
   margin-top: 5px;
-    display: grid
-;
-    gap: .75rem;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
 .dei-checkbox-grid label {
@@ -798,7 +740,7 @@ button:disabled {
 }
 
 .dei-text-input-custom {
-width: 40%;
+  width: 40%;
   padding: 10px 14px;
   border: 1.5px solid var(--lightpurcolor);
   border-radius: 6px;
@@ -808,7 +750,7 @@ width: 40%;
 }
 
 .dei-text-input-custom::placeholder {
-  color: #B994F1;
+  color: #b994f1;
 }
 
 .dei-number-input-custom {
@@ -820,14 +762,12 @@ width: 40%;
   font-size: var(--parafont);
   font-weight: bold;
   color: var(--lightpurcolor);
-    outline: none;
-  
+  outline: none;
 }
 
 /* popupcard3 */
 
 .dei-inclusive-policies {
- 
   color: #5b008b;
   margin-top: 20px;
 }
@@ -843,7 +783,7 @@ width: 40%;
   font-size: var(--parafont);
   font-weight: 600;
   margin-bottom: 15px;
-  color:#62208F;
+  color: #62208f;
 }
 
 /* Checkbox list */
@@ -862,11 +802,9 @@ width: 40%;
   color: var(--lightpurcolor);
 }
 
-
 /* popupcard4 */
 
 .deipopup-container {
-
   margin-top: 20px;
 }
 
@@ -923,12 +861,9 @@ width: 40%;
   color: black;
 }
 
-
-
 /* popupcard5 */
 
 .dei-metrics-sec-container {
-
   margin: 25px 0;
 }
 
@@ -947,7 +882,7 @@ width: 40%;
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #62208F;
+  color: #62208f;
 }
 
 .dei-metrics-sec-checkbox-grid {
@@ -975,7 +910,7 @@ width: 40%;
   border: 1px solid var(--lightpurcolor);
   border-radius: 6px;
   font-size: 14px;
-  color: #B994F1;
+  color: #b994f1;
 }
 
 input[type="checkbox"],
@@ -984,14 +919,9 @@ input[type="radio"] {
   margin-right: 6px;
 }
 
-
-
-
 /* popupcard6 */
 
-
 .dei-review-sec-container {
-
   margin: 20px 0;
 }
 
@@ -1004,7 +934,7 @@ input[type="radio"] {
 .dei-review-sec-label {
   font-size: var(--parafont);
   font-weight: 500;
-  color: #62208F;
+  color: #62208f;
   margin-bottom: 8px;
   display: block;
 }
@@ -1022,10 +952,64 @@ input[type="radio"] {
   border-radius: 4px;
   font-size: 13.5px;
   line-height: 1.4;
-  color: #62208F;
+  color: #62208f;
 }
 
 input[type="checkbox"] {
   accent-color: #5b008b;
   margin-top: 6px;
+}
+
+.daitalenthire-hero {
+  /* replace with your image path */
+  background-size: cover;
+  background-position: center right; /* focuses the image on right side */
+  background-repeat: no-repeat;
+ /* adjust as needed */
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+  height: 200px;
+ /* positions content to left */
+  padding-left: 80px; /* space from the left */
+  color: #240960; /* matches your text color */
+  position: relative;
+  text-align: left;
+   div {
+      width: 100%;}
+}
+
+@media screen and (min-width: 800px) {
+  .daitalenthire-hero {
+    background-image: url("../../images/deitalent1.jpg");
+    justify-content: center;
+      height: 500px;
+    div {
+      width: 60%;
+    }
+  }
+  .tempo-bg1 {
+  background-image: url("../../images/deitalent2.jpg");
+}
+
+.tempo-bg2 {
+  background-image: url("../../images/deitalentbg.jpg");
+}
+}
+
+
+.hero-content {
+  max-width: 500px;
+  z-index: 1;
+}
+
+.daitalenthire-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.daitalenthire-hero p {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
